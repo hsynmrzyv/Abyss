@@ -1,0 +1,33 @@
+.btn {
+  border: none;
+  text-transform: uppercase;
+  height: 3rem;
+  min-width: 3rem;
+  font-weight: 600;
+  color: #b5bebe;
+  background-color: #fff;
+  border-radius: 1px;
+  cursor: pointer;
+  transition: all 200ms linear;
+  font-family: inherit;
+}
+
+.btn.wide {
+  min-width: 5rem;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #b5bebe;
+}
+
+.btn.purple {
+  background-color: #6977df;
+  color: #fff;
+  margin-right: 5px;
+  padding: 0 1rem;
+}
+
+.btn.purple:hover {
+  background-color: #5460bd;
+}

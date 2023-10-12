@@ -1,0 +1,44 @@
+.zoom {
+  display: flex;
+  margin-left: 5px;
+  gap: 2px;
+  position: relative;
+}
+
+.zoom ul {
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 1rem;
+  width: 5rem;
+  z-index: 10;
+}
+
+.zoom ul li {
+  color: #b5bebe;
+  background-color: #fff;
+  transition: all 200ms linear;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  font-size: 12px;
+  cursor: pointer;
+  display: flex;
+}
+
+.zoom ul li span {
+  color: #6977df;
+  display: none;
+}
+
+.zoom ul li.active span {
+  display: block;
+}
+
+.zoom ul li.active {
+  color: #6977df;
+}
+
+.zoom ul li:hover {
+  color: #000;
+  background-color: #b5bebe;
+}

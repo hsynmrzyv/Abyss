@@ -1,0 +1,74 @@
+.categories {
+  position: relative;
+  flex: 1;
+  cursor: move;
+  overflow: hidden;
+}
+
+.draggable__container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.draggable {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.draggable__header {
+  align-items: center;
+  display: flex;
+}
+
+.draggable__title {
+  padding: 8px 12px;
+  border: 1px dashed #ccc;
+  margin-right: 10px;
+}
+
+.draggable__btns {
+  display: flex;
+}
+
+.draggable__header > button,
+.draggable__btns button {
+  height: 20px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: none;
+  background-color: #b5bebe;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.draggable__list {
+  display: flex;
+  gap: 10px;
+}
+.draggable__container.center {
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%);
+  transition: 0.3s ease-in-out;
+}
+
+.draggable__input {
+  padding: 8px 12px;
+  outline: none;
+  background-color: #fff;
+  border: none;
+  margin-right: 10px;
+}
+
+.draggable__btn.delete {
+  background-color: #ee5773;
+}
